@@ -236,24 +236,28 @@
     </Compile>
     <Compile Include="MantenimientoMedicamentos.aspx.cs">
       <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoMedicamentos.aspx.designer.cs">
       <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoPacientes.aspx.cs">
       <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoPacientes.aspx.designer.cs">
       <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoSintomas.aspx.cs">
       <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoSintomas.aspx.designer.cs">
       <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.designer.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
