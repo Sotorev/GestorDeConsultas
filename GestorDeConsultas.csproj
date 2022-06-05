@@ -127,6 +127,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Agenda.json" />
     <Content Include="Historial.json" />
+    <Content Include="MantenimientoUsuarios.aspx" />
     <Content Include="Medicamentos.json" />
     <Content Include="Pacientes.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -205,6 +206,13 @@
     <Compile Include="Historial.cs" />
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoUsuarios.aspx.cs">
+      <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoUsuarios.aspx.designer.cs">
+      <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Medicamento.cs" />
     <Compile Include="Multimedia.cs" />
