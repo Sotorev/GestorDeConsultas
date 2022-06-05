@@ -143,7 +143,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Agenda.json" />
     <Content Include="Historial.json" />
-    <Content Include="Login.aspx" />
     <Content Include="MantenimientoMedicamentos.aspx" />
     <Content Include="MantenimientoPacientes.aspx" />
     <Content Include="MantenimientoSintomas.aspx" />
@@ -226,13 +225,6 @@
     <Compile Include="Historial.cs" />
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoMedicamentos.aspx.cs">
       <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
