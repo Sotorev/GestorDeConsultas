@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Agenda.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -124,6 +125,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Agenda.json" />
+    <Content Include="Historial.json" />
+    <Content Include="Medicamentos.json" />
+    <Content Include="Pacientes.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -160,6 +165,12 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda.aspx.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda.aspx.designer.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Agenda.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -187,6 +198,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Guardar.cs" />
     <Compile Include="Historial.cs" />
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -227,6 +239,8 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Sintomas.json" />
+    <Content Include="Usuarios.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
