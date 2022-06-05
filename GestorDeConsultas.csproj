@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Agenda.json" />
     <Content Include="Historial.json" />
+    <Content Include="Login.aspx" />
     <Content Include="MantenimientoMedicamentos.aspx" />
     <Content Include="MantenimientoPacientes.aspx" />
     <Content Include="MantenimientoSintomas.aspx" />
@@ -226,30 +227,33 @@
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MantenimientoMedicamentos.aspx.cs">
       <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoMedicamentos.aspx.designer.cs">
       <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoPacientes.aspx.cs">
       <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoPacientes.aspx.designer.cs">
       <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoSintomas.aspx.cs">
       <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoSintomas.aspx.designer.cs">
       <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.designer.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
