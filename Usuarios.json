@@ -1,0 +1,12 @@
+[
+  {
+    "UserName": "secretaria",
+    "Password": "$2a$11$OeP37fzmd8bs1l.Axux39uyTJ2AsPTbk9t3x91oACS.K7KLHPOVc6",
+    "Level": 2
+  },
+  {
+    "UserName": "admin",
+    "Password": "$2a$11$CSyTRQmSw4secTxJBTyHPe9/YNYkCU5RbwuWWvKtkcK1Vnge5kvtC",
+    "Level": 1
+  }
+]
