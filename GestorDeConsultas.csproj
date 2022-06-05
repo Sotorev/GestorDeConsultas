@@ -182,9 +182,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Historial.cs" />
-    <Compile Include="Lectura.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    <Compile Include="Lectura.cs" />
     <Compile Include="Medicamento.cs" />
     <Compile Include="Multimedia.cs" />
     <Compile Include="Paciente.cs" />
