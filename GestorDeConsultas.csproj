@@ -209,7 +209,6 @@
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.designer.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
