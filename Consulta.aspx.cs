@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -15,8 +16,12 @@ namespace Proyecto_final
         private static List<Medicamento> medicamentosPaciente = new List<Medicamento>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            Lectura lector = new Lectura();
+            var identidad = (FormsIdentity)Context.User.Identity;
+            if (identidad.Ticket.UserData != "1")
+            {
+                Response.Redirect("~/Default.aspx", true);
+            }
+                Lectura lector = new Lectura();
             lector.LeerHistorial();
             lector.LeerAgenda();
             lector.LeerSintomas();

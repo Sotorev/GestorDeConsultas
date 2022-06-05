@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -11,6 +12,11 @@ namespace Proyecto_final
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            var identidad = (FormsIdentity)Context.User.Identity;
+            if (identidad.Ticket.UserData != "1")
+            {
+                Response.Redirect("~/Default.aspx", true);
+            }
             new Lectura().LeerUsuarios();
         }
 
