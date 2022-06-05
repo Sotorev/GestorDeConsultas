@@ -44,12 +44,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -125,6 +141,14 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Agenda.json" />
+    <Content Include="Historial.json" />
+    <Content Include="MantenimientoMedicamentos.aspx" />
+    <Content Include="MantenimientoPacientes.aspx" />
+    <Content Include="MantenimientoSintomas.aspx" />
+    <Content Include="MantenimientoUsuarios.aspx" />
+    <Content Include="Medicamentos.json" />
+    <Content Include="Pacientes.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -202,6 +226,30 @@
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="MantenimientoMedicamentos.aspx.cs">
+      <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoMedicamentos.aspx.designer.cs">
+      <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPacientes.aspx.cs">
+      <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPacientes.aspx.designer.cs">
+      <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoSintomas.aspx.cs">
+      <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoSintomas.aspx.designer.cs">
+      <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoUsuarios.aspx.cs">
+      <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoUsuarios.aspx.designer.cs">
+      <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Medicamento.cs" />
     <Compile Include="Multimedia.cs" />
     <Compile Include="Paciente.cs" />
@@ -238,6 +286,8 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Sintomas.json" />
+    <Content Include="Usuarios.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
