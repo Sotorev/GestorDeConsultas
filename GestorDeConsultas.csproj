@@ -206,6 +206,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Consulta.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Consulta.aspx.designer.cs">
       <DependentUpon>Consulta.aspx</DependentUpon>
@@ -243,6 +244,7 @@
     </Compile>
     <Compile Include="Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
