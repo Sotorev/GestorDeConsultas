@@ -143,6 +143,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Agenda.json" />
     <Content Include="Historial.json" />
+    <Content Include="MantenimientoMedicamentos.aspx" />
+    <Content Include="MantenimientoPacientes.aspx" />
+    <Content Include="MantenimientoSintomas.aspx" />
     <Content Include="MantenimientoUsuarios.aspx" />
     <Content Include="Medicamentos.json" />
     <Content Include="Pacientes.json" />
@@ -222,6 +225,27 @@
     <Compile Include="Historial.cs" />
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoMedicamentos.aspx.cs">
+      <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoMedicamentos.aspx.designer.cs">
+      <DependentUpon>MantenimientoMedicamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPacientes.aspx.cs">
+      <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoPacientes.aspx.designer.cs">
+      <DependentUpon>MantenimientoPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoSintomas.aspx.cs">
+      <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoSintomas.aspx.designer.cs">
+      <DependentUpon>MantenimientoSintomas.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoUsuarios.aspx.cs">
       <DependentUpon>MantenimientoUsuarios.aspx</DependentUpon>
