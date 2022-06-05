@@ -57,7 +57,8 @@ namespace Proyecto_final
             {
                 edad += (DateTime.Now.Year - p.FechaDeNacimiento.Year);
             }
-            Label1.Text = (edad/Lectura.Pacientes.Count).ToString();
+            if(Lectura.Pacientes.Count > 0)
+                Label1.Text = (edad/Lectura.Pacientes.Count).ToString();
         }
         private void ObtenerMedicamentosComunes()
         {
