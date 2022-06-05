@@ -167,6 +167,7 @@
   <ItemGroup>
     <Compile Include="Agenda.aspx.cs">
       <DependentUpon>Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Agenda.aspx.designer.cs">
       <DependentUpon>Agenda.aspx</DependentUpon>
@@ -198,7 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Guardar.cs" />
+    <Compile Include="Guardar.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Historial.cs" />
     <Compile Include="Lectura.cs">
       <SubType>ASPXCodeBehind</SubType>
