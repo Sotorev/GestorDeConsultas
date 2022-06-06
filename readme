@@ -14,4 +14,4 @@ Para agregar imágenes se agregado una clase auxiliar llamada multimedia, para m
 multimedia tenia listas de tipo string como atributos.
 
 Algunas limitaciones que tomamos en cuenta fueron las recetas, ya este programa no abarcaría todas las funciones de una clínica médica real, entonces a pesar de que el programa
-registra que los medicamentos y sus dosis, el paciente no podría tener acceso a ella.
+registra que los medicamentos y sus dosis, el paciente no podría tener acceso a ella. Por motivos de tiempo no logramos agregar los reportes de mensuales de asistencia de pacientes. 
