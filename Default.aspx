@@ -35,7 +35,7 @@
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Obtener ingresos" />
     </p>
     <p>
-        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Total de ingresos"></asp:Label>
     </p>
 
 </asp:Content>

@@ -38,6 +38,7 @@ namespace Proyecto_final
             }
             GridView1.DataSource = Lectura.Medicamentos;
             GridView1.DataBind();
+            LimpiarCamposDeDatos();
         }
         protected void AgregarButton_Click(object sender, EventArgs e)
         {
@@ -60,6 +61,14 @@ namespace Proyecto_final
             }
             GridView1.DataSource = Lectura.Medicamentos;
             GridView1.DataBind();
+            LimpiarCamposDeDatos();
+        }
+        private void LimpiarCamposDeDatos()
+        {
+            CodigoTextBox.Text = null;
+            IngrTextBox.Text = null;
+            MarcaTextBox.Text = null;
+            EnfermedadesTextBox.Text = null;
         }
     }
 }

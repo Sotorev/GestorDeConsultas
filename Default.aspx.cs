@@ -27,12 +27,13 @@ namespace Proyecto_final
             List<EstadisticaEnfermedad> enfermedadesComunes = new List<EstadisticaEnfermedad>();
             foreach(var a in Lectura.Historial)
             {
-                EstadisticaEnfermedad e = new EstadisticaEnfermedad();
-                e.Enfermedad = a.Diagnostico;
-                if(enfermedadesComunes.Find(p => p.Enfermedad == a.Diagnostico) != null)
+                if (enfermedadesComunes.Find(p => p.Enfermedad == a.Diagnostico) != null)
                 {
                     continue;
                 }
+                EstadisticaEnfermedad e = new EstadisticaEnfermedad();
+                e.Enfermedad = a.Diagnostico;
+                e.Pacientes++;
                 foreach(var b in Lectura.Historial)
                 {
                     
@@ -40,7 +41,7 @@ namespace Proyecto_final
                     {
                         continue;
                     }
-                    else if(a.Diagnostico == b.Diagnostico)
+                    else if(a.Diagnostico == b.Diagnostico && a.NIT != b.NIT)
                     {
                         e.Pacientes++;
                     }
@@ -82,8 +83,13 @@ namespace Proyecto_final
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            ObtenerTotalDeIngresos();
-
+            try
+            {
+                ObtenerTotalDeIngresos();
+            }catch(Exception ex)
+            {
+                Response.Write("<script> alert('Ingrese las fechas correspondientes') </script>");
+            }
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Proyecto_final
             lector.LeerPacientes();
             lector.LeerMedicamentos();
 
-            if (Lectura.Pacientes.Count > 0 && !IsPostBack)
+            if (Lectura.Pacientes.Count > 0 && !IsPostBack && Lectura.Agenda.Count >0)
             {
                 CargarDatosPacientes();
                 
@@ -281,6 +281,8 @@ namespace Proyecto_final
                 };
                 Lectura.Agenda.Add(cita);
                 new Guardar().GuardarAgenda();
+                Response.Write("<script> alert('Cita agendada exitosamente!') </script>");
+
             }
             else
             {
