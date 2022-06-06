@@ -4,9 +4,14 @@ Se desarrollaron diferentes secciones como lo son, registro de pacientes, agenda
 Limitaciones que se dieron:
 
 Cambio de diseño de clases:
-Para agregar los reportes se había querido implementar una cada clase para cada reporte, pero solo hizo hacer una clase auxiliar para 
+Para agregar los reportes se había querido implementar una clase para cada reporte, pero solo hizo hacer una clase auxiliar para 
 tener obtener los datos de las enfermedades más comúnes. Las otras clases no fueron necesarias ya que se hizo que cada reporte tuviera alguna variable en otras clases usadas
 anteriormente desde cada registro de consulta u objeto necesario para obtener dichas estadísticas, como es el caso de los medicamentos más recetados, inicialmente
 según el enunciado del proyecto se tendría una clase medicamentos con ciertos atributos, para nuestro proyeco decidimos agregar una variable extra, la cual representaría
 el número de veces que el medicamento ha sido recetado, aprovechamos esta variable ya que habría un archivo json general de cada medicamento registrado, por lo cual la variable
 sería compartida siempre.
+Para agregar imágenes se agregado una clase auxiliar llamada multimedia, para mostrar archivos se utilizaron distintas cuadros de visualización (gridview) ya que la clase
+multimedia tenia listas de tipo string como atributos.
+
+Algunas limitaciones que tomamos en cuenta fueron las recetas, ya este programa no abarcaría todas las funciones de una clínica médica real, entonces a pesar de que el programa
+registra que los medicamentos y sus dosis, el paciente no podría tener acceso a ella.
