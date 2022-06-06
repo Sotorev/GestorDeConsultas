@@ -337,6 +337,7 @@ namespace Proyecto_final
             int id = -1;
             Historial historialMedicoPaciente = new Historial();
             List<Multimedia> historialmultimediaPaciente = new List<Multimedia>();
+            Receta historialReceta = new Receta();
             if(FiltroIDDropDownList.Text.Length > 0)
                 id= Convert.ToInt32(FiltroIDDropDownList.Text);
 
@@ -348,6 +349,8 @@ namespace Proyecto_final
                 HistorialMedicoGridView.DataBind();
                 MultimediaHGridView.DataSource = historialmultimediaPaciente;
                 MultimediaHGridView.DataBind();
+                RecetaGridView.DataSource = new Receta[] { historialMedicoPaciente.Receta };
+                RecetaGridView.DataBind();
             }
             else
             {
