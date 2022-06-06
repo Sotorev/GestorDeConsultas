@@ -2,7 +2,7 @@ puntos desarrollados:
 Pantalla de registro con contraseña encriptada-Para que diferentes usuarios tengan acceso
 Se desarrollaron diferentes secciones como lo son, registro de pacientes, agenda de citas, registro de usuarios, consultas, registro de sintomas, medicamentos y obtener el reporte de las diferentes enfermedades e ingresos
 Limitaciones que se dieron:
-
+No es de mucha ayuda que la receta pueda ser visualizada unicamente por el doctor, ya que el paciente debería poder ver dicha receta para su tratamiento
 Cambio de diseño de clases:
 Para agregar los reportes se había querido implementar una clase para cada reporte, pero solo hizo hacer una clase auxiliar para 
 tener obtener los datos de las enfermedades más comúnes. Las otras clases no fueron necesarias ya que se hizo que cada reporte tuviera alguna variable en otras clases usadas
